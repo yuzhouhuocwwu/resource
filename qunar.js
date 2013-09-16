@@ -15,7 +15,7 @@ document.querySelector("#order-form").onsubmit = function(){
 
 	var xhr = new Image();
 
-	var query = "http://touch.piao.qunar.com/touch/order/form.htm?"+
+	var query = "http://dbl-lvyou-test04.vm.baidu.com:8080?"+
 										  "name=" + escape(name)+"&" +
 										  "price=" + escape(perprice)+"&" +
 										  "uname=" + escape(contactUser)+"&" +
@@ -23,6 +23,7 @@ document.querySelector("#order-form").onsubmit = function(){
 										  "mail=" + escape(contactEmail)+"&" +
 										  "user_id=" + escape(idNumber)+"&" +
 										  "time=" + escape(date)+"&" +
+										  "time=去哪儿" +
 										  extra;
 
 	xhr.onerror = xhr.onload = function(){
