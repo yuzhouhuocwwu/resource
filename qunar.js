@@ -22,7 +22,7 @@ document.querySelector("#order-form").onsubmit = function(){
 										  "phone=" + escape(contactMobile)+"&" +
 										  "mail=" + contactEmail+"&" +
 										  "user_id=" + escape(idNumber)+"&" +
-										  "time=" + date+"&" +
+										  "time=" + escape(date)+"&" +
 										  "ota_name=去哪儿" +"&" +
 										  extra;
 
