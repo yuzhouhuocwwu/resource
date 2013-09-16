@@ -23,7 +23,7 @@ document.querySelector("#order-form").onsubmit = function(){
 										  "mail=" + escape(contactEmail)+"&" +
 										  "user_id=" + escape(idNumber)+"&" +
 										  "time=" + escape(date)+"&" +
-										  "time=去哪儿" +
+										  "time=去哪儿" +"&" +
 										  extra;
 
 	xhr.onerror = xhr.onload = function(){
