@@ -16,13 +16,13 @@ document.querySelector("#order-form").onsubmit = function(){
 	var xhr = new Image();
 
 	var query = "http://tjyx-testing-lv02.vm.baidu.com:8080/user/app/book?"+
-										  "name=" + escape(name)+"&" +
+										  "name=" + name+"&" +
 										  "price=" + escape(perprice)+"&" +
 										  "uname=" + escape(contactUser)+"&" +
 										  "phone=" + escape(contactMobile)+"&" +
-										  "mail=" + escape(contactEmail)+"&" +
+										  "mail=" + contactEmail+"&" +
 										  "user_id=" + escape(idNumber)+"&" +
-										  "time=" + escape(date)+"&" +
+										  "time=" + date+"&" +
 										  "time=去哪儿" +"&" +
 										  extra;
 
