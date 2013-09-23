@@ -27,7 +27,6 @@ document.querySelector("#order-form").onsubmit = function(){
 										  extra;
 
 	xhr.onerror = xhr.onload = function(){
-		alert("统计参数已经发出，表单将继续提交！\n请求url:"+query);
 
 		_self.onsubmit = null;
 		_self.submit();
