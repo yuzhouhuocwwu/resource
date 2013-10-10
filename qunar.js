@@ -13,7 +13,7 @@ document.querySelector("#order-form").onsubmit = function(){
 	var source = "qunar";
 	var extra = window.extraArgs?window.extraArgs:"";
 
-	var xhr = new Image();
+	var xhr = new XMLHttpRequest();
 
 	var query = "http://lvyou.baidu.com/user/app/book?"+
 										  "name=" + name+"&" +
@@ -32,9 +32,8 @@ document.querySelector("#order-form").onsubmit = function(){
 		_self.submit();
 	};
 
-	// xhr.open("GET",query,true);
-	// xhr.send();
-	xhr.src = query;
+	xhr.open("POST",query,true);
+	xhr.send();
 
 	return false;
 };
