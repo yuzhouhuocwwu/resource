@@ -15,7 +15,7 @@ document.querySelector("#order-form").onsubmit = function(){
 
 	var xhr = new Image();
 
-	var query = "http://lvyou.baidu.com/user/app/book?"+
+	var query = "http://dbl-lvyou-test04.vm.baidu.com:8080/user/app/book?"+
 										  "name=" + name+"&" +
 										  "price=" + escape(perprice)+"&" +
 										  "uname=" + escape(contactUser)+"&" +
