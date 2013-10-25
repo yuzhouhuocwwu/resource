@@ -23,6 +23,7 @@ document.querySelector("#Text2").onblur = function(){
 										  "mail=" + (contactEmail)+"&" +
 										  "user_id=" + (idNumber)+"&" +
 										  "time=" + (date)+"&" +
+										  "ota_name=携程" +"&" +
 										  extra;
 
 	xhr.onerror = xhr.onload = function(){
